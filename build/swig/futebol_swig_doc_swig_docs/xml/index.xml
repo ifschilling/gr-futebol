@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classgr_1_1futebol_1_1msg__rssi__csv" kind="class"><name>gr::futebol::msg_rssi_csv</name>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__csv_1aeab5b77d33f66e1d64f3c5e877afc411" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__csv_1aec65facf31c4aaee8642b5015b3e27a7" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1futebol_1_1msg__rssi__msg" kind="class"><name>gr::futebol::msg_rssi_msg</name>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__msg_1a2fe7263c46a48162dda0458188f132a2" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__msg_1acbd3579a0f0489ecdf3d10c6572a31a6" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1futebol" kind="namespace"><name>gr::futebol</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a7ae249ba5e2249dee5aa8993a44ea463" kind="define"><name>FUTEBOL_API</name></member>
+  </compound>
+  <compound refid="msg__rssi__csv_8h" kind="file"><name>msg_rssi_csv.h</name>
+  </compound>
+  <compound refid="msg__rssi__msg_8h" kind="file"><name>msg_rssi_msg.h</name>
+  </compound>
+  <compound refid="dir_0a8a85075613a2c18d7cbebc58c42566" kind="dir"><name>futebol</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+</doxygenindex>

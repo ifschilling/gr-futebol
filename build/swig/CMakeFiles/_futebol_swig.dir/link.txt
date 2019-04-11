@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared  -o _futebol_swig.so CMakeFiles/_futebol_swig.dir/futebol_swigPYTHON_wrap.cxx.o -Wl,-rpath,/home/ifschilling/gr-futebol/build/lib: -lpython2.7 ../lib/libgnuradio-futebol-1.0.0git.so.0.0.0 -lboost_filesystem -lboost_system -lgnuradio-runtime -lgnuradio-pmt -llog4cpp 
