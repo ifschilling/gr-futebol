@@ -18,25 +18,16 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#ifndef INCLUDED_FUTEBOL_MSG_rssi_MSG_IMPL_H
-#define INCLUDED_FUTEBOL_MSG_rssi_MSG_IMPL_H
+#ifndef INCLUDED_FUTEBOL_MSG_RSSI_MSG_IMPL_H
+#define INCLUDED_FUTEBOL_MSG_RSSI_MSG_IMPL_H
 
-#include <futebol/msg_rssi_msg.h>
+#include "futebol/msg_rssi_msg.h"
 
 namespace gr {
   namespace futebol {
 
     class msg_rssi_msg_impl : public msg_rssi_msg
     {
-     private:
-      void handle_pdu(pmt::pmt_t pdu);
-
-      float d_rssi;
-      int d_msg_offset;
-			int d_msg_len;
-      char* d_msg;
-      float d_threshold;
-
      public:
       msg_rssi_msg_impl(float threshold);
       ~msg_rssi_msg_impl();
@@ -48,6 +39,23 @@ namespace gr {
            gr_vector_int &ninput_items,
            gr_vector_const_void_star &input_items,
            gr_vector_void_star &output_items);
+
+      void msg_in(pmt::pmt_t pdu);
+
+     private:
+	uint16_t crc16(char *buf, int len);
+	std::string string_to_hex(const std::string &input);
+
+
+      float d_rssi;
+      int d_msg_offset;
+      int d_msg_len;
+      char* d_msg;
+      float d_threshold;
+      float sum_rssi = 0;
+      int count = 0;
+      struct timeval t_start;
+
     };
 
   } // namespace futebol
