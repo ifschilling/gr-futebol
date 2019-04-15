@@ -4,6 +4,7 @@
     <compoundname>gr::futebol</compoundname>
     <innerclass refid="classgr_1_1futebol_1_1msg__rssi__csv" prot="public">gr::futebol::msg_rssi_csv</innerclass>
     <innerclass refid="classgr_1_1futebol_1_1msg__rssi__msg" prot="public">gr::futebol::msg_rssi_msg</innerclass>
+    <innerclass refid="classgr_1_1futebol_1_1msg__to__file" prot="public">gr::futebol::msg_to_file</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

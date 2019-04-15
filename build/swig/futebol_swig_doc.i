@@ -51,3 +51,19 @@ To avoid accidental use of raw pointers, futebol::msg_rssi_msg's constructor is 
 
 Args:
     threshold : "
+
+%feature("docstring") gr::futebol::msg_to_file "<+description of block+>
+
+Constructor Specific Documentation:
+
+Return a shared_ptr to a new instance of futebol::msg_to_file.
+
+To avoid accidental use of raw pointers, futebol::msg_to_file's constructor is in a private implementation class. futebol::msg_to_file::make is the public interface for creating new instances."
+
+%feature("docstring") gr::futebol::msg_to_file::make "<+description of block+>
+
+Constructor Specific Documentation:
+
+Return a shared_ptr to a new instance of futebol::msg_to_file.
+
+To avoid accidental use of raw pointers, futebol::msg_to_file's constructor is in a private implementation class. futebol::msg_to_file::make is the public interface for creating new instances."

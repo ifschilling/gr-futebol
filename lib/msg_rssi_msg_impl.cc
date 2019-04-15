@@ -96,6 +96,7 @@ public:
       count = 0;
       return;
     }
+
     size_t data_len = pmt::blob_length(blob);
     if(data_len < 11) {
       //dout << "MAC: frame too short. Dropping!" << std::endl;
@@ -135,7 +136,7 @@ public:
 		//dout << "MAC: correct crc. Propagate packet to APP layer. RSSI: " << (sum_rssi/count) << " Samples: " << count << std::endl;
 
 
-    // buf = source,t_sec,t_usec,rssi,data
+    // buf = source,t_sec,t_usec,rssi,"data"\n
     std::string buf;
     buf = source;
     buf.append(",");
@@ -146,39 +147,38 @@ public:
     buf.append(std::to_string((int)t.tv_usec));
     buf.append(",");
     buf.append(std::to_string((float)(sum_rssi/count)));
-    buf.append(",");
+    buf.append(",\"");
     buf.append(data);
+    buf.append("\"\n");
+
+    sum_rssi = 0;
+		count = 0;
 
 		pmt::pmt_t payload = pmt::make_blob((char*)buf.c_str(), buf.length()+1);
 
 		message_port_pub(pmt::mp("msg_out"), pmt::cons(pmt::PMT_NIL, payload));
-
-		/*string str 
-		to_file(, (sum_rssi/count));*/
-		sum_rssi = 0;
-		count = 0;
   }
 
   uint16_t crc16(char *buf, int len) {
-	uint16_t crc = 0;
+    uint16_t crc = 0;
 
-	for(int i = 0; i < len; i++) {
-		for(int k = 0; k < 8; k++) {
-			int input_bit = (!!(buf[i] & (1 << k)) ^ (crc & 1));
-			crc = crc >> 1;
-			if(input_bit) {
-				crc ^= (1 << 15);
-				crc ^= (1 << 10);
-				crc ^= (1 <<  3);
-			}
-		}
-	}
+    for(int i = 0; i < len; i++) {
+      for(int k = 0; k < 8; k++) {
+        int input_bit = (!!(buf[i] & (1 << k)) ^ (crc & 1));
+        crc = crc >> 1;
+        if(input_bit) {
+          crc ^= (1 << 15);
+          crc ^= (1 << 10);
+          crc ^= (1 <<  3);
+        }
+      }
+    }
 
-	return crc;
-}
+	  return crc;
+  }
 
-std::string string_to_hex(const std::string& input)
-{
+  std::string string_to_hex(const std::string& input)
+  {
     static const char* const lut = "0123456789ABCDEF";
     size_t len = input.length();
 
@@ -191,7 +191,7 @@ std::string string_to_hex(const std::string& input)
         output.push_back(lut[c & 15]);
     }
     return output;
-}
+  }
 
 private:
   float d_rssi;

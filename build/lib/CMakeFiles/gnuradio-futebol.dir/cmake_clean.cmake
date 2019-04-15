@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.o"
   "CMakeFiles/gnuradio-futebol.dir/msg_rssi_msg_impl.cc.o"
+  "CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.o"
   "libgnuradio-futebol-1.0.0git.pdb"
   "libgnuradio-futebol-1.0.0git.so.0.0.0"
   "libgnuradio-futebol-1.0.0git.so"

@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="msg__rssi__csv__impl_8h" kind="file" language="C++">
+    <compoundname>msg_rssi_csv_impl.h</compoundname>
+    <includes refid="msg__rssi__csv_8h" local="no">futebol/msg_rssi_csv.h</includes>
+    <incdepgraph>
+      <node id="19">
+        <label>msg_rssi_csv_impl.h</label>
+        <link refid="msg__rssi__csv__impl_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>futebol/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>futebol/msg_rssi_csv.h</label>
+        <link refid="msg__rssi__csv_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="23">
+        <label>gnuradio/block.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classgr_1_1futebol_1_1msg__rssi__csv__impl" prot="public">gr::futebol::msg_rssi_csv_impl</innerclass>
+    <innerclass refid="structgr_1_1futebol_1_1csv__hdr" prot="public">gr::futebol::csv_hdr</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1futebol">gr::futebol</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="msg__rssi__csv__impl_8h_1a34b7fe84707bd003107b514fee87ee54" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char sender[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>sender</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" line="50" column="1" bodyfile="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="msg__rssi__csv__impl_8h_1a73b1267bfdc1f83d10224b06a34f31d8" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char sec[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>sec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" line="51" column="1" bodyfile="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="msg__rssi__csv__impl_8h_1a62449b3084732af51b2f9d08d55c452b" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char usec[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>usec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" line="52" column="1" bodyfile="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h"/>
+  </compounddef>
+</doxygen>

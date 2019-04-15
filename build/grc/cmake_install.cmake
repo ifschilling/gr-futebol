@@ -39,8 +39,8 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES
-    "/home/ifschilling/gr-futebol/grc/futebol_msg_rssi_csv.xml"
-    "/home/ifschilling/gr-futebol/grc/futebol_msg_rrsi_msg.xml"
+    "/home/ifschilling/gr-futebol/grc/futebol_msg_rssi_msg.xml"
+    "/home/ifschilling/gr-futebol/grc/futebol_msg_to_file.xml"
     )
 endif()
 

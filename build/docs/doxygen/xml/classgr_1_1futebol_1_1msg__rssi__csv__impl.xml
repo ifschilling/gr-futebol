@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1futebol_1_1msg__rssi__csv__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::futebol::msg_rssi_csv_impl</compoundname>
+    <basecompoundref refid="classgr_1_1futebol_1_1msg__rssi__csv" prot="public" virt="non-virtual">gr::futebol::msg_rssi_csv</basecompoundref>
+    <includes refid="msg__rssi__csv__impl_8h" local="no">msg_rssi_csv_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1futebol_1_1msg__rssi__csv__impl_1a6af0f336a59777efe3251c7509b9aa24" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::futebol::msg_rssi_csv_impl::d_rssi</definition>
+        <argsstring></argsstring>
+        <name>d_rssi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" line="34" column="1" bodyfile="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1futebol_1_1msg__rssi__csv__impl_1a8053b4043e7569986f8be266efea7a21" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::futebol::msg_rssi_csv_impl::d_msg_offset</definition>
+        <argsstring></argsstring>
+        <name>d_msg_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" line="35" column="1" bodyfile="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1futebol_1_1msg__rssi__csv__impl_1afd1eb657c46ff8f1821f1531bf80aae5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::futebol::msg_rssi_csv_impl::d_msg_len</definition>
+        <argsstring></argsstring>
+        <name>d_msg_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" line="36" column="1" bodyfile="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1futebol_1_1msg__rssi__csv__impl_1ac2a1e4d73c9f7486913b063c920c3eb8" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* gr::futebol::msg_rssi_csv_impl::d_msg</definition>
+        <argsstring></argsstring>
+        <name>d_msg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" line="37" column="1" bodyfile="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1futebol_1_1msg__rssi__csv__impl_1ad64edcd330428f4302c096dca3a6ceff" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::futebol::msg_rssi_csv_impl::d_threshold</definition>
+        <argsstring></argsstring>
+        <name>d_threshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" line="38" column="1" bodyfile="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1futebol_1_1msg__rssi__csv__impl_1a56871a0824856c636373b144e3d3f8dd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::futebol::msg_rssi_csv_impl::handle_pdu</definition>
+        <argsstring>(pmt::pmt_t pdu)</argsstring>
+        <name>handle_pdu</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>pdu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" line="32" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1futebol_1_1msg__rssi__csv__impl_1ac9985e1aa519c92f9b5bd3e1ee1164d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::futebol::msg_rssi_csv_impl::msg_rssi_csv_impl</definition>
+        <argsstring>(float threshold)</argsstring>
+        <name>msg_rssi_csv_impl</name>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1futebol_1_1msg__rssi__csv__impl_1a09eee12d15736c9b062d62128e36e190" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::futebol::msg_rssi_csv_impl::~msg_rssi_csv_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~msg_rssi_csv_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1futebol_1_1msg__rssi__csv__impl_1a1b7647cb6f85a9e8bfd3a211d3668a9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::futebol::msg_rssi_csv_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" line="47" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9">
+        <label>block</label>
+      </node>
+      <node id="8">
+        <label>gr::futebol::msg_rssi_csv</label>
+        <link refid="classgr_1_1futebol_1_1msg__rssi__csv"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gr::futebol::msg_rssi_csv_impl</label>
+        <link refid="classgr_1_1futebol_1_1msg__rssi__csv__impl"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="12">
+        <label>block</label>
+      </node>
+      <node id="11">
+        <label>gr::futebol::msg_rssi_csv</label>
+        <link refid="classgr_1_1futebol_1_1msg__rssi__csv"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gr::futebol::msg_rssi_csv_impl</label>
+        <link refid="classgr_1_1futebol_1_1msg__rssi__csv__impl"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" line="30" column="1" bodyfile="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" bodystart="29" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classgr_1_1futebol_1_1msg__rssi__csv__impl_1ac2a1e4d73c9f7486913b063c920c3eb8" prot="private" virt="non-virtual"><scope>gr::futebol::msg_rssi_csv_impl</scope><name>d_msg</name></member>
+      <member refid="classgr_1_1futebol_1_1msg__rssi__csv__impl_1afd1eb657c46ff8f1821f1531bf80aae5" prot="private" virt="non-virtual"><scope>gr::futebol::msg_rssi_csv_impl</scope><name>d_msg_len</name></member>
+      <member refid="classgr_1_1futebol_1_1msg__rssi__csv__impl_1a8053b4043e7569986f8be266efea7a21" prot="private" virt="non-virtual"><scope>gr::futebol::msg_rssi_csv_impl</scope><name>d_msg_offset</name></member>
+      <member refid="classgr_1_1futebol_1_1msg__rssi__csv__impl_1a6af0f336a59777efe3251c7509b9aa24" prot="private" virt="non-virtual"><scope>gr::futebol::msg_rssi_csv_impl</scope><name>d_rssi</name></member>
+      <member refid="classgr_1_1futebol_1_1msg__rssi__csv__impl_1ad64edcd330428f4302c096dca3a6ceff" prot="private" virt="non-virtual"><scope>gr::futebol::msg_rssi_csv_impl</scope><name>d_threshold</name></member>
+      <member refid="classgr_1_1futebol_1_1msg__rssi__csv__impl_1a1b7647cb6f85a9e8bfd3a211d3668a9d" prot="public" virt="non-virtual"><scope>gr::futebol::msg_rssi_csv_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1futebol_1_1msg__rssi__csv__impl_1a56871a0824856c636373b144e3d3f8dd" prot="private" virt="non-virtual"><scope>gr::futebol::msg_rssi_csv_impl</scope><name>handle_pdu</name></member>
+      <member refid="classgr_1_1futebol_1_1msg__rssi__csv_1aec65facf31c4aaee8642b5015b3e27a7" prot="public" virt="non-virtual"><scope>gr::futebol::msg_rssi_csv_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1futebol_1_1msg__rssi__csv__impl_1ac9985e1aa519c92f9b5bd3e1ee1164d3" prot="public" virt="non-virtual"><scope>gr::futebol::msg_rssi_csv_impl</scope><name>msg_rssi_csv_impl</name></member>
+      <member refid="classgr_1_1futebol_1_1msg__rssi__csv_1aeab5b77d33f66e1d64f3c5e877afc411" prot="public" virt="non-virtual"><scope>gr::futebol::msg_rssi_csv_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1futebol_1_1msg__rssi__csv__impl_1a09eee12d15736c9b062d62128e36e190" prot="public" virt="non-virtual"><scope>gr::futebol::msg_rssi_csv_impl</scope><name>~msg_rssi_csv_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

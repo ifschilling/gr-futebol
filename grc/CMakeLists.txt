@@ -16,8 +16,7 @@
 # along with GNU Radio; see the file COPYING.  If not, write to
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
-
 install(FILES
-    futebol_msg_rssi_csv.xml
-    futebol_msg_rrsi_msg.xml DESTINATION share/gnuradio/grc/blocks
+    futebol_msg_rssi_msg.xml
+    futebol_msg_to_file.xml DESTINATION share/gnuradio/grc/blocks
 )

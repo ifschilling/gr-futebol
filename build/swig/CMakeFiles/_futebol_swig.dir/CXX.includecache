@@ -10,7 +10,13 @@
 gnuradio/attributes.h
 -
 
-../include/futebol/msg_rssi_csv.h
+../include/futebol/msg_rssi_msg.h
+futebol/api.h
+-
+gnuradio/block.h
+-
+
+../include/futebol/msg_to_file.h
 futebol/api.h
 -
 gnuradio/block.h
@@ -63,8 +69,10 @@ gnuradio/high_res_timer.h
 -
 limits.h
 -
-futebol/msg_rssi_csv.h
-/home/ifschilling/gr-futebol/build/swig/futebol/msg_rssi_csv.h
+futebol/msg_rssi_msg.h
+/home/ifschilling/gr-futebol/build/swig/futebol/msg_rssi_msg.h
+futebol/msg_to_file.h
+/home/ifschilling/gr-futebol/build/swig/futebol/msg_to_file.h
 float.h
 -
 math.h

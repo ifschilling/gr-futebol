@@ -40,8 +40,8 @@ endif()
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/futebol" TYPE FILE FILES
     "/home/ifschilling/gr-futebol/include/futebol/api.h"
-    "/home/ifschilling/gr-futebol/include/futebol/msg_rssi_csv.h"
-    "/home/ifschilling/gr-futebol/include/futebol/msg_rrsi_msg.h"
+    "/home/ifschilling/gr-futebol/include/futebol/msg_rssi_msg.h"
+    "/home/ifschilling/gr-futebol/include/futebol/msg_to_file.h"
     )
 endif()
 

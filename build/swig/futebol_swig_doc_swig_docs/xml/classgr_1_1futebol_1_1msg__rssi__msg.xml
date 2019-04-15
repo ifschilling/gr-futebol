@@ -50,7 +50,7 @@
         </childnode>
       </node>
       <node id="5">
-        <label>gr::block</label>
+        <label>block</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
@@ -61,7 +61,7 @@
         </childnode>
       </node>
       <node id="7">
-        <label>gr::block</label>
+        <label>block</label>
       </node>
     </collaborationgraph>
     <location file="/home/ifschilling/gr-futebol/include/futebol/msg_rssi_msg.h" line="37" column="1" bodyfile="/home/ifschilling/gr-futebol/include/futebol/msg_rssi_msg.h" bodystart="36" bodyend="50"/>

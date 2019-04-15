@@ -8,6 +8,10 @@
     <member refid="classgr_1_1futebol_1_1msg__rssi__msg_1a2fe7263c46a48162dda0458188f132a2" kind="typedef"><name>sptr</name></member>
     <member refid="classgr_1_1futebol_1_1msg__rssi__msg_1acbd3579a0f0489ecdf3d10c6572a31a6" kind="function"><name>make</name></member>
   </compound>
+  <compound refid="classgr_1_1futebol_1_1msg__to__file" kind="class"><name>gr::futebol::msg_to_file</name>
+    <member refid="classgr_1_1futebol_1_1msg__to__file_1a58e28033288eb68e08a68582007e3c1f" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__to__file_1a080320d5b3c067cbc097271e268a3b0d" kind="function"><name>make</name></member>
+  </compound>
   <compound refid="namespacegr" kind="namespace"><name>gr</name>
   </compound>
   <compound refid="namespacegr_1_1futebol" kind="namespace"><name>gr::futebol</name>
@@ -20,6 +24,8 @@
   <compound refid="msg__rssi__csv_8h" kind="file"><name>msg_rssi_csv.h</name>
   </compound>
   <compound refid="msg__rssi__msg_8h" kind="file"><name>msg_rssi_msg.h</name>
+  </compound>
+  <compound refid="msg__to__file_8h" kind="file"><name>msg_to_file.h</name>
   </compound>
   <compound refid="dir_0a8a85075613a2c18d7cbebc58c42566" kind="dir"><name>futebol</name>
   </compound>

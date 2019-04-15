@@ -3,7 +3,8 @@
 
 swig/CMakeFiles/_futebol_swig.dir/futebol_swigPYTHON_wrap.cxx.o
  ../include/futebol/api.h
- ../include/futebol/msg_rssi_csv.h
+ ../include/futebol/msg_rssi_msg.h
+ ../include/futebol/msg_to_file.h
  /home/ifschilling/gr-futebol/build/swig/futebol_swigPYTHON_wrap.cxx
  /usr/include/gnuradio/swig/gnuradio_swig_bug_workaround.h
  /usr/include/python2.7/Python.h

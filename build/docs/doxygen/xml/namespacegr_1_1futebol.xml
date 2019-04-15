@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegr_1_1futebol" kind="namespace" language="C++">
+    <compoundname>gr::futebol</compoundname>
+    <innerclass refid="structgr_1_1futebol_1_1csv__hdr" prot="public">gr::futebol::csv_hdr</innerclass>
+    <innerclass refid="classgr_1_1futebol_1_1msg__rssi__csv" prot="public">gr::futebol::msg_rssi_csv</innerclass>
+    <innerclass refid="classgr_1_1futebol_1_1msg__rssi__csv__impl" prot="public">gr::futebol::msg_rssi_csv_impl</innerclass>
+    <innerclass refid="classgr_1_1futebol_1_1msg__rssi__msg" prot="public">gr::futebol::msg_rssi_msg</innerclass>
+    <innerclass refid="classgr_1_1futebol_1_1msg__rssi__msg__impl" prot="public">gr::futebol::msg_rssi_msg_impl</innerclass>
+    <innerclass refid="classgr_1_1futebol_1_1msg__to__file" prot="public">gr::futebol::msg_to_file</innerclass>
+    <innerclass refid="classgr_1_1futebol_1_1msg__to__file__impl" prot="public">gr::futebol::msg_to_file_impl</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacegr_1_1futebol_1a7a050a88c26221dbf49949d0b1ecdfe9" prot="public" static="no" mutable="no">
+        <type><ref refid="classgr_1_1futebol_1_1msg__rssi__msg__impl" kindref="compound">gr::futebol::msg_rssi_msg_impl</ref></type>
+        <definition> gr::futebol::msg_rssi_msg_impl gr::futebol::__attribute__</definition>
+        <argsstring></argsstring>
+        <name>__attribute__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ifschilling/gr-futebol/lib/msg_rssi_msg_impl.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegr_1_1futebol_1abb1229b9bdc2426a70ddcbfb24805a41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structgr_1_1futebol_1_1csv__hdr" kindref="compound">gr::futebol::csv_hdr</ref></type>
+        <definition>struct gr::futebol::csv_hdr gr::futebol::__attribute__</definition>
+        <argsstring>((packed))</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(packed)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.h" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ifschilling/gr-futebol/include/futebol/msg_rssi_csv.h" line="29" column="1"/>
+  </compounddef>
+</doxygen>

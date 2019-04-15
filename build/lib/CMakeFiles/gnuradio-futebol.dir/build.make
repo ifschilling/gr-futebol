@@ -57,33 +57,9 @@ include lib/CMakeFiles/gnuradio-futebol.dir/progress.make
 # Include the compile flags for this target's objects.
 include lib/CMakeFiles/gnuradio-futebol.dir/flags.make
 
-lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.o: lib/CMakeFiles/gnuradio-futebol.dir/flags.make
-lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.o: ../lib/msg_rssi_csv_impl.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ifschilling/gr-futebol/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.o"
-	cd /home/ifschilling/gr-futebol/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.o -c /home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.cc
-
-lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.i"
-	cd /home/ifschilling/gr-futebol/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.cc > CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.i
-
-lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.s"
-	cd /home/ifschilling/gr-futebol/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ifschilling/gr-futebol/lib/msg_rssi_csv_impl.cc -o CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.s
-
-lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.o.requires:
-
-.PHONY : lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.o.requires
-
-lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.o.provides: lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.o.requires
-	$(MAKE) -f lib/CMakeFiles/gnuradio-futebol.dir/build.make lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.o.provides.build
-.PHONY : lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.o.provides
-
-lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.o.provides.build: lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.o
-
-
 lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_msg_impl.cc.o: lib/CMakeFiles/gnuradio-futebol.dir/flags.make
 lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_msg_impl.cc.o: ../lib/msg_rssi_msg_impl.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ifschilling/gr-futebol/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_msg_impl.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ifschilling/gr-futebol/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_msg_impl.cc.o"
 	cd /home/ifschilling/gr-futebol/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-futebol.dir/msg_rssi_msg_impl.cc.o -c /home/ifschilling/gr-futebol/lib/msg_rssi_msg_impl.cc
 
 lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_msg_impl.cc.i: cmake_force
@@ -105,16 +81,40 @@ lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_msg_impl.cc.o.provides: lib/CMakeFi
 lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_msg_impl.cc.o.provides.build: lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_msg_impl.cc.o
 
 
+lib/CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.o: lib/CMakeFiles/gnuradio-futebol.dir/flags.make
+lib/CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.o: ../lib/msg_to_file_impl.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ifschilling/gr-futebol/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.o"
+	cd /home/ifschilling/gr-futebol/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.o -c /home/ifschilling/gr-futebol/lib/msg_to_file_impl.cc
+
+lib/CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.i"
+	cd /home/ifschilling/gr-futebol/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ifschilling/gr-futebol/lib/msg_to_file_impl.cc > CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.i
+
+lib/CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.s"
+	cd /home/ifschilling/gr-futebol/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ifschilling/gr-futebol/lib/msg_to_file_impl.cc -o CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.s
+
+lib/CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.o.requires:
+
+.PHONY : lib/CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.o.requires
+
+lib/CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.o.provides: lib/CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.o.requires
+	$(MAKE) -f lib/CMakeFiles/gnuradio-futebol.dir/build.make lib/CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.o.provides.build
+.PHONY : lib/CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.o.provides
+
+lib/CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.o.provides.build: lib/CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.o
+
+
 # Object files for target gnuradio-futebol
 gnuradio__futebol_OBJECTS = \
-"CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.o" \
-"CMakeFiles/gnuradio-futebol.dir/msg_rssi_msg_impl.cc.o"
+"CMakeFiles/gnuradio-futebol.dir/msg_rssi_msg_impl.cc.o" \
+"CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.o"
 
 # External object files for target gnuradio-futebol
 gnuradio__futebol_EXTERNAL_OBJECTS =
 
-lib/libgnuradio-futebol-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.o
 lib/libgnuradio-futebol-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_msg_impl.cc.o
+lib/libgnuradio-futebol-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.o
 lib/libgnuradio-futebol-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-futebol.dir/build.make
 lib/libgnuradio-futebol-1.0.0git.so.0.0.0: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 lib/libgnuradio-futebol-1.0.0git.so.0.0.0: /usr/lib/x86_64-linux-gnu/libboost_system.so
@@ -137,8 +137,8 @@ lib/CMakeFiles/gnuradio-futebol.dir/build: lib/libgnuradio-futebol-1.0.0git.so
 
 .PHONY : lib/CMakeFiles/gnuradio-futebol.dir/build
 
-lib/CMakeFiles/gnuradio-futebol.dir/requires: lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_csv_impl.cc.o.requires
 lib/CMakeFiles/gnuradio-futebol.dir/requires: lib/CMakeFiles/gnuradio-futebol.dir/msg_rssi_msg_impl.cc.o.requires
+lib/CMakeFiles/gnuradio-futebol.dir/requires: lib/CMakeFiles/gnuradio-futebol.dir/msg_to_file_impl.cc.o.requires
 
 .PHONY : lib/CMakeFiles/gnuradio-futebol.dir/requires
 

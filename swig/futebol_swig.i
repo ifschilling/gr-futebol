@@ -8,12 +8,11 @@
 %include "futebol_swig_doc.i"
 
 %{
-#include "futebol/msg_rssi_csv.h"
-#include "futebol/msg_rrsi_msg.h"
+#include "futebol/msg_rssi_msg.h"
+#include "futebol/msg_to_file.h"
 %}
 
-
-%include "futebol/msg_rssi_csv.h"
-GR_SWIG_BLOCK_MAGIC2(futebol, msg_rssi_csv);
-%include "futebol/msg_rrsi_msg.h"
-GR_SWIG_BLOCK_MAGIC2(futebol, msg_rrsi_msg);
+%include "futebol/msg_rssi_msg.h"
+GR_SWIG_BLOCK_MAGIC2(futebol, msg_rssi_msg);
+%include "futebol/msg_to_file.h"
+GR_SWIG_BLOCK_MAGIC2(futebol, msg_to_file);

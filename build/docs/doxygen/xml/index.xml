@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="structgr_1_1futebol_1_1csv__hdr" kind="struct"><name>gr::futebol::csv_hdr</name>
+    <member refid="structgr_1_1futebol_1_1csv__hdr_1a0bfbbb959db0b775768f9b4b64b71459" kind="variable"><name>sender</name></member>
+    <member refid="structgr_1_1futebol_1_1csv__hdr_1af284dcedcc4215fc305c4bab64d328e4" kind="variable"><name>sec</name></member>
+    <member refid="structgr_1_1futebol_1_1csv__hdr_1a16bc48b94117e4acb6b9c17f6d4fbe15" kind="variable"><name>usec</name></member>
+  </compound>
+  <compound refid="classgr_1_1futebol_1_1msg__rssi__csv" kind="class"><name>gr::futebol::msg_rssi_csv</name>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__csv_1aeab5b77d33f66e1d64f3c5e877afc411" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__csv_1aec65facf31c4aaee8642b5015b3e27a7" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1futebol_1_1msg__rssi__csv__impl" kind="class"><name>gr::futebol::msg_rssi_csv_impl</name>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__csv__impl_1a6af0f336a59777efe3251c7509b9aa24" kind="variable"><name>d_rssi</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__csv__impl_1a8053b4043e7569986f8be266efea7a21" kind="variable"><name>d_msg_offset</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__csv__impl_1afd1eb657c46ff8f1821f1531bf80aae5" kind="variable"><name>d_msg_len</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__csv__impl_1ac2a1e4d73c9f7486913b063c920c3eb8" kind="variable"><name>d_msg</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__csv__impl_1ad64edcd330428f4302c096dca3a6ceff" kind="variable"><name>d_threshold</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__csv__impl_1a56871a0824856c636373b144e3d3f8dd" kind="function"><name>handle_pdu</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__csv__impl_1ac9985e1aa519c92f9b5bd3e1ee1164d3" kind="function"><name>msg_rssi_csv_impl</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__csv__impl_1a09eee12d15736c9b062d62128e36e190" kind="function"><name>~msg_rssi_csv_impl</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__csv__impl_1a1b7647cb6f85a9e8bfd3a211d3668a9d" kind="function"><name>general_work</name></member>
+  </compound>
+  <compound refid="classgr_1_1futebol_1_1msg__rssi__msg" kind="class"><name>gr::futebol::msg_rssi_msg</name>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__msg_1a2fe7263c46a48162dda0458188f132a2" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__msg_1acbd3579a0f0489ecdf3d10c6572a31a6" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1futebol_1_1msg__rssi__msg__impl" kind="class"><name>gr::futebol::msg_rssi_msg_impl</name>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__msg__impl_1a2cce4b454ef7534e0fea4f5153ccd28b" kind="variable"><name>d_rssi</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__msg__impl_1a64f7a933d54983b6dd126da64f2a5bb1" kind="variable"><name>d_msg_offset</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__msg__impl_1a45f2ad313b7f32dd9fe9c60a78277b8e" kind="variable"><name>d_msg_len</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__msg__impl_1a91b413a4dfc80a479c0ad385139024f6" kind="variable"><name>d_msg</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__msg__impl_1a018b42d95bdcebadfa5ee4000f537f3c" kind="variable"><name>d_threshold</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__msg__impl_1a80c46fc5f6f3fbab6c6c0cd323e92136" kind="function"><name>handle_pdu</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__msg__impl_1a9b6b06a25f3ec91b7991767599fc4780" kind="function"><name>msg_rssi_msg_impl</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__msg__impl_1ab4259da6bf0191df70c9c6586c00b175" kind="function"><name>~msg_rssi_msg_impl</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__rssi__msg__impl_1a00f810c5b642f8f4503ed01db66e9cdb" kind="function"><name>general_work</name></member>
+  </compound>
+  <compound refid="classgr_1_1futebol_1_1msg__to__file" kind="class"><name>gr::futebol::msg_to_file</name>
+    <member refid="classgr_1_1futebol_1_1msg__to__file_1a58e28033288eb68e08a68582007e3c1f" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__to__file_1a080320d5b3c067cbc097271e268a3b0d" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1futebol_1_1msg__to__file__impl" kind="class"><name>gr::futebol::msg_to_file_impl</name>
+    <member refid="classgr_1_1futebol_1_1msg__to__file__impl_1a904fede045c829246c5807bf21aaa99a" kind="variable"><name>d_msg_offset</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__to__file__impl_1a7878eaa6e4e5c1066beb6dfdaf21ffdf" kind="variable"><name>d_msg_len</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__to__file__impl_1a336cd39d8d6ea22b38ea8c778428344f" kind="variable"><name>d_msg</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__to__file__impl_1a15618f64663e4180065b7b19f087b701" kind="function"><name>handle_pdu</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__to__file__impl_1a29909f29bbbe72dd37d4d83ae3e49c78" kind="function"><name>msg_to_file_impl</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__to__file__impl_1a8109dfa08bd647b37ccbc550e77ca4ed" kind="function"><name>~msg_to_file_impl</name></member>
+    <member refid="classgr_1_1futebol_1_1msg__to__file__impl_1a786d88e9e3a1e3fe0052cf54e9fc760a" kind="function"><name>general_work</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1futebol" kind="namespace"><name>gr::futebol</name>
+    <member refid="namespacegr_1_1futebol_1a7a050a88c26221dbf49949d0b1ecdfe9" kind="variable"><name>__attribute__</name></member>
+    <member refid="namespacegr_1_1futebol_1abb1229b9bdc2426a70ddcbfb24805a41" kind="function"><name>__attribute__</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a7ae249ba5e2249dee5aa8993a44ea463" kind="define"><name>FUTEBOL_API</name></member>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="msg__rssi__csv_8h" kind="file"><name>msg_rssi_csv.h</name>
+  </compound>
+  <compound refid="msg__rssi__csv__impl_8h" kind="file"><name>msg_rssi_csv_impl.h</name>
+    <member refid="msg__rssi__csv__impl_8h_1a34b7fe84707bd003107b514fee87ee54" kind="variable"><name>sender</name></member>
+    <member refid="msg__rssi__csv__impl_8h_1a73b1267bfdc1f83d10224b06a34f31d8" kind="variable"><name>sec</name></member>
+    <member refid="msg__rssi__csv__impl_8h_1a62449b3084732af51b2f9d08d55c452b" kind="variable"><name>usec</name></member>
+  </compound>
+  <compound refid="msg__rssi__msg_8h" kind="file"><name>msg_rssi_msg.h</name>
+  </compound>
+  <compound refid="msg__rssi__msg__impl_8h" kind="file"><name>msg_rssi_msg_impl.h</name>
+  </compound>
+  <compound refid="msg__to__file_8h" kind="file"><name>msg_to_file.h</name>
+  </compound>
+  <compound refid="msg__to__file__impl_8h" kind="file"><name>msg_to_file_impl.h</name>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_0a8a85075613a2c18d7cbebc58c42566" kind="dir"><name>futebol</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>
