@@ -55,6 +55,7 @@ namespace gr {
       float sum_rssi = 0;
       int count = 0;
       struct timeval t_start;
+      bool flag_first = 1;
 
     };
 

@@ -110,6 +110,12 @@ namespace gr {
 		void
 		msg_rssi_msg_impl::msg_in(pmt::pmt_t msg)
 		{
+			if(flag_first == 1){
+				flag_first = 0;
+				std::string buf = "Source,t_sec,t_usec,RSSI,Data\n";
+				pmt::pmt_t payload = pmt::make_blob((char*)buf.c_str(), buf.length()+1);
+				message_port_pub(pmt::mp("msg_out"), pmt::cons(pmt::PMT_NIL, payload));
+			}
 			// get current time
 			struct timeval t_aux;
 			gettimeofday(&t_aux, NULL);
