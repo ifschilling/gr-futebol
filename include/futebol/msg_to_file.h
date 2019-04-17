@@ -37,15 +37,6 @@ namespace gr {
     {
      public:
       typedef boost::shared_ptr<msg_to_file> sptr;
-
-      /*!
-       * \brief Return a shared_ptr to a new instance of futebol::msg_to_file.
-       *
-       * To avoid accidental use of raw pointers, futebol::msg_to_file's
-       * constructor is in a private implementation
-       * class. futebol::msg_to_file::make is the public interface for
-       * creating new instances.
-       */
       static sptr make();
     };
 

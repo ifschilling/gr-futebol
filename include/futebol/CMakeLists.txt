@@ -22,5 +22,6 @@
 ########################################################################
 install(FILES
     api.h
-    msg_rssi_msg.h DESTINATION include/futebol
+    msg_rssi_msg.h
+    msg_to_file.h DESTINATION include/futebol
 )

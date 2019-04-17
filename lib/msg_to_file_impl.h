@@ -21,20 +21,13 @@
 #ifndef INCLUDED_FUTEBOL_MSG_TO_FILE_IMPL_H
 #define INCLUDED_FUTEBOL_MSG_TO_FILE_IMPL_H
 
-#include <futebol/msg_to_file.h>
+#include "futebol/msg_to_file.h"
 
 namespace gr {
   namespace futebol {
 
     class msg_to_file_impl : public msg_to_file
     {
-     private:
-      void handle_pdu(pmt::pmt_t pdu);
-      
-      int d_msg_offset;
-			int d_msg_len;
-			char* d_msg;
-
      public:
       msg_to_file_impl();
       ~msg_to_file_impl();
@@ -46,6 +39,13 @@ namespace gr {
            gr_vector_int &ninput_items,
            gr_vector_const_void_star &input_items,
            gr_vector_void_star &output_items);
+
+     private:
+      void handle_pdu(pmt::pmt_t pdu);
+      
+      int d_msg_offset;
+			int d_msg_len;
+			char* d_msg;
     };
 
   } // namespace futebol

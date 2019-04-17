@@ -26,6 +26,7 @@ include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
 list(APPEND futebol_sources
     msg_rssi_msg_impl.cc
+    msg_to_file_impl.cc
 )
 
 set(futebol_sources "${futebol_sources}" PARENT_SCOPE)
