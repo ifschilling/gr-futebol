@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: IEEE 802.15.4 Transceiver using OQPSK PHY
-# Generated: Mon May 20 09:26:13 2019
+# Generated: Mon May 20 09:32:23 2019
 ##################################################
 
 
@@ -22,11 +22,10 @@ from ieee802_15_4_oqpsk_phy import ieee802_15_4_oqpsk_phy  # grc-generated hier_
 from optparse import OptionParser
 import futebol
 import ieee802_15_4
-import pmt
 import time
 
 
-class transceiver(gr.top_block):
+class receiver(gr.top_block):
 
     def __init__(self):
         gr.top_block.__init__(self, "IEEE 802.15.4 Transceiver using OQPSK PHY")
@@ -51,23 +50,12 @@ class transceiver(gr.top_block):
         self.uhd_usrp_source_0.set_samp_rate(4000000)
         self.uhd_usrp_source_0.set_center_freq(freq, 0)
         self.uhd_usrp_source_0.set_normalized_gain(rx_gain, 0)
-        self.uhd_usrp_sink_0 = uhd.usrp_sink(
-        	",".join(('', "")),
-        	uhd.stream_args(
-        		cpu_format="fc32",
-        		channels=range(1),
-        	),
-        	'pdu_length',
-        )
-        self.uhd_usrp_sink_0.set_samp_rate(4000000)
-        self.uhd_usrp_sink_0.set_center_freq(freq, 0)
-        self.uhd_usrp_sink_0.set_normalized_gain(tx_gain, 0)
         self.ieee802_15_4_rime_stack_0 = ieee802_15_4.rime_stack(([129]), ([131]), ([132]), ([23,42]))
         self.ieee802_15_4_oqpsk_phy_0 = ieee802_15_4_oqpsk_phy()
-        self.ieee802_15_4_mac_0 = ieee802_15_4.mac(True,0x8841,0,0x1aaa,0xffff,0x3344)
+        self.ieee802_15_4_mac_0 = ieee802_15_4.mac(False,0x8841,0,0x1aaa,0xffff,0x3344)
         self.futebol_msg_to_file_0 = futebol.msg_to_file()
         self.futebol_msg_rssi_msg_0 = futebol.msg_rssi_msg(-0.5)
-        self.blocks_message_strobe_0 = blocks.message_strobe(pmt.intern("Hello World!\n"), 10)
+        self.blocks_null_sink_0 = blocks.null_sink(gr.sizeof_gr_complex*1)
         self.blocks_file_sink_0_0 = blocks.file_sink(gr.sizeof_char*1, '/tmp/teste.csv', False)
         self.blocks_file_sink_0_0.set_unbuffered(True)
         self.RSSI_0 = RSSI()
@@ -75,7 +63,6 @@ class transceiver(gr.top_block):
         ##################################################
         # Connections
         ##################################################
-        self.msg_connect((self.blocks_message_strobe_0, 'strobe'), (self.ieee802_15_4_rime_stack_0, 'bcin'))
         self.msg_connect((self.futebol_msg_rssi_msg_0, 'msg_out'), (self.futebol_msg_to_file_0, 'in'))
         self.msg_connect((self.ieee802_15_4_mac_0, 'pdu out'), (self.ieee802_15_4_oqpsk_phy_0, 'txin'))
         self.msg_connect((self.ieee802_15_4_mac_0, 'app out'), (self.ieee802_15_4_rime_stack_0, 'fromMAC'))
@@ -84,7 +71,7 @@ class transceiver(gr.top_block):
         self.msg_connect((self.ieee802_15_4_rime_stack_0, 'toMAC'), (self.ieee802_15_4_mac_0, 'app in'))
         self.connect((self.RSSI_0, 0), (self.futebol_msg_rssi_msg_0, 0))
         self.connect((self.futebol_msg_to_file_0, 0), (self.blocks_file_sink_0_0, 0))
-        self.connect((self.ieee802_15_4_oqpsk_phy_0, 0), (self.uhd_usrp_sink_0, 0))
+        self.connect((self.ieee802_15_4_oqpsk_phy_0, 0), (self.blocks_null_sink_0, 0))
         self.connect((self.uhd_usrp_source_0, 0), (self.RSSI_0, 0))
         self.connect((self.uhd_usrp_source_0, 0), (self.ieee802_15_4_oqpsk_phy_0, 0))
 
@@ -93,8 +80,6 @@ class transceiver(gr.top_block):
 
     def set_tx_gain(self, tx_gain):
         self.tx_gain = tx_gain
-        self.uhd_usrp_sink_0.set_normalized_gain(self.tx_gain, 0)
-
 
     def get_rx_gain(self):
         return self.rx_gain
@@ -110,10 +95,9 @@ class transceiver(gr.top_block):
     def set_freq(self, freq):
         self.freq = freq
         self.uhd_usrp_source_0.set_center_freq(self.freq, 0)
-        self.uhd_usrp_sink_0.set_center_freq(self.freq, 0)
 
 
-def main(top_block_cls=transceiver, options=None):
+def main(top_block_cls=receiver, options=None):
     if gr.enable_realtime_scheduling() != gr.RT_OK:
         print "Error: failed to enable real-time scheduling."
 
